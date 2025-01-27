@@ -13,3 +13,44 @@ This project demonstrates how to manage and reuse assets across multiple package
 * __Scalability:__ Easier to scale as the project grows.
 * __Version Control:__ Better version control for assets.
 * __Collaboration:__ Allows different team members to work on assets and UI components simultaneously without conflicts.
+
+### Running the App Root
+
+1. **Navigate to the project root directory:**
+   ```sh
+   $ cd /path/to/your/repo/flutter_asset_management
+   ```
+   
+2. **Get the dependencies:**
+   ```sh
+   $ flutter pub get
+    ```
+
+3. **Run the app:**
+   ```sh
+   $ flutter run
+    ```
+   
+### Running Widgetbook
+
+1. **Navigate to the project root directory:**
+   ```sh
+   $ cd /path/to/your/repo/flutter_asset_management/packages/asset_ui
+   ```
+   
+2. **Get the dependencies:**
+   ```sh
+   $ flutter pub get
+    ```
+   
+3. **Generate the Widgetbook directories:**  
+   ```sh
+   $ flutter pub run build_runner build --delete-conflicting-outputs
+    ```
+
+4. **Run Widgetbook:**
+   ```sh
+   $ flutter run -d chrome -t lib/widgetbook.dart
+    ```
+   
+pixelypants 2025
