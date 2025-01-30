@@ -34,3 +34,21 @@ class SvgSwearEmojiWidget extends StatelessWidget {
   type: SvgSwearEmojiWidget,
 )
 Widget svgTestUserCase(BuildContext context) => const SvgSwearEmojiWidget();
+
+class LoadingWidget extends StatelessWidget {
+  const LoadingWidget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Image.asset(
+      'assets/gifs/loading_gif.gif',
+      package: 'assets_package',
+    );
+  }
+}
+
+@widgetbook.UseCase(
+  name: 'Keno loading gif',
+  type: LoadingWidget,
+)
+Widget kenoLoadingUserCase(BuildContext context) => const LoadingWidget();

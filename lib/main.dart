@@ -40,6 +40,7 @@ class MyHomePage extends StatelessWidget {
             const Text('Image and SVG from asset_ui package:'),
             const MyImageWidget(),
             const SvgSwearEmojiWidget(),
+            const LoadingWidget(),
           ],
         ),
       ),
